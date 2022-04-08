@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>CodePen - Demo FlexBox 3</title>
+		<style>
+			body {
+				padding: 2em;
+			}
+
+			.headerContainer {
+				display: flex;
+				flex-flow: column wrap;
+				align-content: center;
+				background-color: tomato;
+				font-weight: bold;
+				padding: 10px;
+			}
+
+			.footerContainer {
+				display: flex;
+				flex-flow: column wrap;
+				align-content: center;
+				background: lightgreen;
+				font-weight: bold;
+				padding: 10px;
+			}
+
+			.mainContainer {
+				display: flex;
+				flex-flow: row wrap;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.mainContentItem {
+				text-align: left;
+				background: deepskyblue;
+				flex: 3 0px;
+				order: 2;
+			}
+
+			article {
+				padding: 10px;
+				margin: 10px;
+				background: aqua;
+
+			}
+
+			.sideBarLeftItem {
+				background: gold;
+				order: 1;
+			}
+
+			.sideBarRightItem {
+				background: hotpink;
+				order: 3;
+			}
+
+			.sideBarItem {
+				flex: 1 0 0;
+				border: 0px solid green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="headerContainer">
+			<h1>BridgeLabz is COOL</h1>
+		</header>
+		<div class="mainContainer">
+			<section class="mainContentItem">
+				<article>
+					<h2>First Article</h2>
+					<p>BridgeLabz is an AWS recognised incubator and is solely focussed on solving tech employability. 
+                        Over the last 4 years, it has worked with 500+ top tech companies and 2500+ engineers have been hired from Bridgelabz. 
+                        It has labs in Mumbai and Bangalore. It has partnered with over 500+ companies, including Yatra, Capgemini, Meru Cabs, 
+                        LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank. BridgeLabz won Business World Techtor Award 2020 and secured 
+                        2nd position at Global Edtech Startup Awards 2019, India. Also, was selected by the Maharashtra state government as Top 100 Startups 2019. 
+                        More than 250+ learners placed in the last 6 months despite covid downturn while most organizations were not hiring or were laying off!.</p>
+				</article>
+				<article>
+					<h2>Second Article</h2>
+					<p>BridgeLabz Job Guarantee Fellowship Program is a 16 weeks tech-intensive program designed for deserving candidates looking for high paying development tech jobs.
+                         Through hands-on experiential learning experience, we groom candidates and give them job guarantee with a starting salary from Rs. 3 lacs up to Rs. 6 lacs. 
+                         More than 2500+ learners placed in top tech companies till date through this program.</p>
+				</article>
+				<article>
+					<h2>Third Article</h2>
+					<p>BridgeLabz Job Guarantee Fellowship Program is for Off-campus candidates looking out for tech jobs. Off-campus candidates are those that have successfully completed their post-graduate degree program.
+                        All the engineering Students/ MCA students of any stream of pass out year 2019 and 2020 - interested in software development space can aspire for BridgeLabz Job Guarantee Fellowship Program.</p>
+				</article>
+			</section>
+
+			<sideBar class="sideBarItem sideBarLeftItem">
+				<div class="center">
+					<p>Left Side Bar</p>
+				</div>
+			</sideBar>
+
+			<sideBar class="sideBarItem sideBarRightItem">
+				<div class="center">
+					<p>Right Side Bar</p>
+				</div>
+			</sideBar>
+		</div>
+		<footer class="footerContainer">Footer</footer>
+	</body>
+
+</html>
